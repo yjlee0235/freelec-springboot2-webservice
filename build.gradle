@@ -21,6 +21,8 @@ dependencies {
 
     implementation 'org.springframework.session:spring-session-jdbc'
 
+    implementation 'org.mariadb.jdbc:mariadb-java-client'
+
     runtimeOnly 'com.h2database:h2'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
