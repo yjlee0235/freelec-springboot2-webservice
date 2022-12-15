@@ -23,19 +23,6 @@ before_deploy:
   - cd ../ && mkdir -p deploy
   - mv before-deploy/before-deploy.zip deploy/freelec-springboot2-webservice.zip
 
-#deploy:
-#  - provider: s3
-#    access_key_id: $AWS_ACCESS_KEY
-#    secret_access_key: $AWS_SECRET_KEY
-#
-#    bucket: freelec-springboot-build-yjlee
-#    region: ap-northeast-2
-#
-#    skip_cleanup: true
-#    acl: private
-#    local_dir: deploy
-#    wait-until-deployed: true
-
 deploy:
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY
