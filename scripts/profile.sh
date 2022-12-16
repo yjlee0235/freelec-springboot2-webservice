@@ -6,7 +6,7 @@ function find_idle_profile() {
   if [ ${RESPONSE_CODE} -ge 400 ]; then
     CURRENT_PROFILE=real2
   else
-    CURRENT_PROFILE=$(curl -s http://locahost/profile)
+    CURRENT_PROFILE=$(curl -s http://localhost/profile)
   fi
 
   if [ ${CURRENT_PROFILE} == real1 ]; then
